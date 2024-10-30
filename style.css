@@ -1,0 +1,85 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* Закріплений блок навігації */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #666;
+    color: #fff;
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Назва магазину по центру */
+.store-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Задає висоту блоку, щоб назва розмістилась по центру екрану */
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.store-name h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Стилі для основного контенту */
+main {
+    margin-top: 80px;
+    padding: 2rem;
+}
+
+.content-box {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
