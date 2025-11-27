@@ -8,7 +8,6 @@
 	<link rel="icon" href="images/iconka.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Закріплений зверху блок навігації -->
     <header>
         <nav>
             <ul>
@@ -20,12 +19,10 @@
         </nav>
     </header>
 
-    <!-- Назва магазину -->
     <section class="store-name">
         <h1>Магазин в'язаних речей Pushok's yarn</h1>
     </section>
 
-    <!-- Основний контент сторінки -->
     <main>
         <section id="home" class="content-box">
             <h2>Ласкаво просимо</h2>
@@ -48,8 +45,15 @@
         <section id="partnership" class="content-box">
             <h2>Співпраця</h2>
             <p>Ми відкриті до співпраці з іншими брендами та магазинами. Зв'яжіться з нами для обговорення деталей у вище вказані WhatsApp.</p>
+            
+            <h3>Перевірка партнерського коду</h3>
+            <input type="text" id="userInput" placeholder="Введіть код для доступу">
+            <button onclick="checkCode()">Перевірити код</button>
+            <p id="resultMessage"></p>
         </section>
     </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
-
