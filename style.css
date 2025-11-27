@@ -84,4 +84,46 @@ a {
     font-weight: bold;
 }
 
+/* ... Ваш існуючий CSS-код ... */
+
+/* Стилі для основного контенту */
+/* ... (існуючі стилі для main, .content-box, h2, p, a) ... */
+
+/* ------------------------------------------------ */
+/* НОВІ СТИЛІ ДЛЯ ФОРМИ ПЕРЕВІРКИ КОДУ (#check-code) */
+/* ------------------------------------------------ */
+
+/* Поле введення */
+#userInput {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 250px; 
+    font-size: 1rem;
+    margin-top: 10px; /* Додаємо невеликий відступ зверху */
+}
+
+/* Кнопка */
+#check-code button {
+    padding: 10px 15px;
+    background-color: #666; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#check-code button:hover {
+    background-color: #444; 
+}
+
+/* Повідомлення про результат */
+#resultMessage {
+    margin-top: 10px;
+    font-weight: bold;
+    min-height: 20px; 
+}
 
