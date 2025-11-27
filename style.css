@@ -1,61 +1,4 @@
-/* Загальні стилі */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f0f0f0;
-}
-
-/* Закріплений блок навігації */
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #666;
-    color: #fff;
-    padding: 0.5rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #ccc;
-}
-
-/* Назва магазину по центру */
-.store-name {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh; /* Задає висоту блоку, щоб назва розмістилась по центру екрану */
-    background-color: #e0e0e0;
-    color: #333;
-}
-
-.store-name h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
+/* ... Ваш існуючий CSS-код ... */
 
 /* Стилі для основного контенту */
 main {
@@ -78,8 +21,53 @@ p {
     color: #555;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
+/* Додано стилі для посилань у контенті, щоб вони були видимими */
+.content-box a { 
+    color: #666; /* Змінив колір посилання, щоб він був видимим на світлому фоні */
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------ */
+/* НОВІ СТИЛІ ДЛЯ ФОРМИ ПЕРЕВІРКИ КОДУ */
+/* ------------------------------------------------ */
+
+/* Заголовок форми */
+#partnership h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Поле введення */
+#userInput {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 250px; /* Фіксована ширина */
+    font-size: 1rem;
+}
+
+/* Кнопка */
+#partnership button {
+    padding: 10px 15px;
+    background-color: #666; /* Колір, як у навігації */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
     font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#partnership button:hover {
+    background-color: #444; /* Затемнення при наведенні */
+}
+
+/* Повідомлення про результат */
+#resultMessage {
+    margin-top: 10px;
+    font-weight: bold;
+    /* Колір буде змінено через JavaScript (на зелений або червоний) */
+    min-height: 20px; /* Щоб уникнути стрибків при появі тексту */
 }
