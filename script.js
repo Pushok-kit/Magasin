@@ -10,7 +10,7 @@ function checkCode() {
 
     // 3. Логіка порівняння
     if (enteredCode === correctCode) {
-        resultElement.textContent = "✅ Код ПРАВИЛЬНИЙ! Доступ надано.";
+        resultElement.textContent = "✅ Код ПРАВИЛЬНИЙ! Ви можете скористатися Add-on карткою.";
         resultElement.style.color = "green";
     } else {
         resultElement.textContent = "❌ Неправильний код. Спробуйте ще раз.";
